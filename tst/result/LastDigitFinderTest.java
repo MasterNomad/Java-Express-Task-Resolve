@@ -8,7 +8,9 @@ public class LastDigitFinderTest {
 
     @Test
     public void getResult() {
+
         IResult result = new LastDigitFinder();
+
         int actual;
         int test;
 
@@ -18,7 +20,7 @@ public class LastDigitFinderTest {
                 test = j + i;
                 actual = result.getResult(test);
 
-                // System.out.format("Number: %d, Last digit:%d\n", test, actual);
+                // System.out.format("Number: %d, Last digit: %d\n", test, actual);
 
                 assertEquals(j, actual);
             }
