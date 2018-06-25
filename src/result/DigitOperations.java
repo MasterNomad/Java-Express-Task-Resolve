@@ -21,4 +21,10 @@ public class DigitOperations {
         return sum;
     }
 
+    // Without if
+    public static int nextEvenNumber (int num) {
+        final int[] arr = {2, 1};
+        return num + arr[num % 2];
+    }
+
 }
