@@ -30,15 +30,35 @@ public class DigitOperationsTest {
         int actual;
         int test;
 
-        for (int i = 0; i < 10; i ++)
-            for (int j = 0; j < 10; j++) {
+        for (int h = 0; h < 10; h++)
+            for (int t = 0; t < 10; t++)
+                for (int u = 0; u < 10; u++) {
 
-                test = j + i * 10;
-                actual = DigitOperations.digitOfTens(test);
+                    test = u + t * 10 + h * 100;
+                    actual = DigitOperations.digitOfTens(test);
 
-                // System.out.format("Number: %d, Number of tens: %d\n", test, actual);
+                    // System.out.format("Number: %d, Number of tens: %d\n", test, actual);
 
-                assertEquals(i, actual);
-            }
+                    assertEquals(t, actual);
+                }
+    }
+
+    @Test
+    public void sumOfDigits() {
+
+        int actual;
+        int test;
+
+        for (int h = 0; h < 10; h++)
+            for (int t = 0; t < 10; t++)
+                for (int u = 0; u < 10; u++) {
+
+                    test = u + t * 10 + h * 100;
+                    actual = DigitOperations.sumOfDigits(test);
+
+                    // System.out.format("Number: %d, Sum of digits: %d\n", test, actual);
+
+                    assertEquals(u + t + h, actual);
+                }
     }
 }
