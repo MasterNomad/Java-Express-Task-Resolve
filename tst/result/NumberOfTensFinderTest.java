@@ -4,14 +4,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class LastDigitFinderTest {
+public class NumberOfTensFinderTest {
 
     @Test
     public void getResult() {
         IResult result = new LastDigitFinder();
-        int actual;
-        int test;
-
+        int actual = result.getResult(226);
+        int test = 0;
         for (int i = 0; i < 1000; i += 10)
             for (int j = 0; j < 10; j++) {
 
@@ -24,4 +23,5 @@ public class LastDigitFinderTest {
             }
     }
 
+}
 }
