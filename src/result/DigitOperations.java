@@ -27,4 +27,12 @@ public class DigitOperations {
         return num + arr[num % 2];
     }
 
+    /*If first > second return 1
+      If first < second return 2
+      If first = second return 0*/
+    public static int moreOrLess (int first, int second) {
+        if ( first == second) return 0;
+        return first > second ? 1 : 2;
+    }
+
 }
