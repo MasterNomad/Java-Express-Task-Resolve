@@ -2,7 +2,7 @@ package result;
 
 public class LastDigitFinder implements IResult {
 
-    final String DISCRIPTION = "Input number and you will get it's last digit";
+    private final String DESCRIPTION = "Input number and you will get it's last digit";
 
     @Override
     public int getResult(int num) {
@@ -10,7 +10,8 @@ public class LastDigitFinder implements IResult {
     }
 
     @Override
-    public String getDiscription() {
-        return DISCRIPTION;
+    public String getDescription() {
+        return DESCRIPTION;
     }
 }
+
